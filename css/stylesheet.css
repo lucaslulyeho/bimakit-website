@@ -1,0 +1,899 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #0B4F6C;
+    color: black;
+    color: #474f54;
+} 
+a {
+    text-decoration: none;
+}
+html,body{overflow-x: hidden;}
+
+/* NAVIGATION  */
+nav {
+    background-color: #4F26A6;
+    display: flex;
+    height: 60px;
+    width: 100%;
+    padding-left: 6%;
+    padding-right: 6%;
+    align-items: center;
+    position: fixed;
+    box-sizing: border-box;
+    /* border-bottom: 1px solid #ffffff50; */
+    z-index: 1;
+}
+
+nav ul li{
+    display: none;
+    background-color: #4F26A6;
+    color: white;
+    list-style: none;
+}
+.logo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+    width: 50px;
+
+}
+.logo h1 {
+    
+    color: white;
+    font-weight: normal;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2em;
+    
+}
+
+.page-menu {
+    background-color: #4F26A6;
+    position: absolute;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 100%;
+    display: none;
+}
+.page-menu li {
+    color: white;
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.hambuger-menu i {
+    color: white;
+    font-size: 1.5em;
+}
+.remove-menu {
+    display: none;
+}
+.remove-menu i {
+    color: white;
+    font-size: 1.5em;
+}
+
+
+/* JUMBOTRON */
+.jumbotron {
+    height: 500px;
+    padding-left: 6%;
+    padding-right: 6%;
+    /* background-image: url("../images/jumbotron1.jpg"); */
+    background-image: url("../images/umbrella6.jpg");
+    /* background-image: url("../images/happy.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    padding-top: 140px;
+}
+.slogan {
+    text-align: center;
+    font-size: 2em;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: normal;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    
+}
+.slogan-extended {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1em;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    line-height: 2;
+}
+#get-app {
+    width: 165px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    border-radius: 6px;
+    padding-right: 3px;
+    background-color: #000000;
+    align-items: center;
+    margin-top: 40px;
+    border: 1px solid #ffffff;
+}
+#get-app-info {
+    margin-left: 2px;
+    padding-left: 5px;
+    color: #ffffff;
+}
+#get-app-info h3{
+    font-size: 0.7em;
+    font-weight: normal;
+    color: #ffffff;
+}
+#get-app-info h2{
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+}
+/* HOW IT WORKS */
+.how-it-works {
+    padding:0 6%;
+    border-bottom: 1px solid #00000030;
+    /* width: 100%; */
+}
+.how-it-works h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.how-it-works p {
+    font-size: 1.1em;
+    line-height: 2;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.how-it-works-description ul li {
+    list-style: none;
+    margin-bottom: 30px;
+    /* line-height: 2; */
+    display: flex;
+    /* jborder: 1px solid red; */
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 1px solid yellow; */
+    
+}
+.bullets {
+    margin-left: 5px;
+    /* border: 1px solid green; */
+    width: 90%;
+}
+.how-it-works ul li i {
+    color: #4F26A6;
+    /* border: 1px solid green; */
+}
+.how-it-works ul li div{
+    font-size: 1.1em;
+    /* border: 1px solid green; */
+    padding: 0px;
+    margin-left: 5px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* WHY BIMAKIT */
+.why-bimakit {
+    padding: 0 6%;
+    border-bottom: 1px solid #00000030;
+    /* width: 100%; */
+}
+.why-bimakit h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: left;
+    margin-top: 15px;
+}
+.why-bimakit p {
+    font-size: 1.2em;
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.why-image {
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    border-bottom:1px solid #0B4F6C;
+}
+.time {
+    background-image: url("../images/accurate-alarm-alarm-clock-analogue-359989.jpg");
+}
+.resources {
+    background-image: url("../images/antique-bills-business-cash-210600.jpg");
+}
+.energy {
+    background-image: url("../images/miguel-bruna-TzVN0xQhWaQ-unsplash.jpg");
+    background-position-y: bottom;
+}
+.offence {
+    background-image: url("../images/law.jpeg");
+    background-position-y: bottom;
+}
+.why-description {
+    border: 1px solid #0B4F6C;
+    width: 300px;
+    margin: 10px 20px;
+
+}
+.why-description h3 {
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+    /* padding:  */
+    text-align: left;
+    padding-left: 15px;
+}
+.why-description p {
+    /* border: 1px solid yellow; */
+    font-size: 1em;
+    padding: 0 1px;
+    line-height: 2;
+    text-align: left;
+    padding: 0 15px;
+}
+
+/* REACH OUT TO US */
+.reach-us {
+    margin: 30px 6%;
+    /* background-color: blue; */
+}
+.reach-us h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.reach-us p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.reach-us ul li {
+    margin-top: 20px;
+    display: inline-block;
+    line-height: 3;
+    margin-right: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.reach-us ul li i {
+    color: #4F26A6;
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+.contact-form-section {
+    margin: 0 auto;
+}
+.contact-form-section h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.input-field {
+    width: 48%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0B4F6C20;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+.contact-form textarea {
+    width: 97%;
+    background-color: #0B4F6C20;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.submit-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+.send-message-btn {
+    margin-right: 4px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    text-transform: uppercase;
+    background-color: #01BAEF;
+    color: white;
+    font-size: 1em;
+    border: none;
+}
+.send-email {
+    background-color: #01BAEF;
+    background-color: #8350F2;
+    background-color: white;
+    height: 30px;
+    width: 180px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    /* color: #0B4F6C; */
+    color: white;
+    color: black;
+    border: 1px solid #0B4F6C;
+    border: 1px solid #4F26A6;
+}
+.send-email:hover {
+    background-color: #4F26A6;
+    color: white;
+}
+/* FOOTER */
+footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    border: 1px solid black;
+    background-color: #0B4F6C;
+    background-color: #240C59;
+    /* width: 100% */
+}
+
+
+.socials, .legals {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.socials li, .legals li {
+    list-style: none;
+    margin: 0 10px;
+}
+.socials li i{
+    color: white;
+    font-size: 1.5em;
+}
+.legals li a {
+    color: white;
+    font-size: 1em;
+}
+footer h3 {
+    font-size: 0.9em;
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+    font-weight: normal;
+}
+#how-it-works {
+    margin:0 6%;
+    position: absolute;
+    bottom: 200px;
+    height: 140px;
+    width: 200px;
+    /* border: 1px solid blue; */
+    z-index: -1;
+}
+#why-bimakit {
+    position: absolute;
+    bottom: -330px;
+    height: 140px;
+    width: 200px;
+    /* border: 1px solid green;  */
+    z-index: -1;
+}
+#contacts {
+    position: absolute;
+    /* bottom: 100px; */
+    height: 140px;
+    width: 200px;
+    /* border: 1px solid red;  */
+    z-index: -1;
+    bottom: -2455px;
+    /* top: 10px; */
+    /* top: 10px; */
+}
+
+/* WHEN THE SCREEN BECOMES SMALLER, 320px */
+/* WHEN THE SCREEN BECOMES SMALLER, 320px */
+
+@media screen and (min-width: 320px) {
+ 
+}
+/* WHEN THE SCREEN BECOMES LARGER, 768px */
+/* WHEN THE SCREEN BECOMES LARGER, 768px */
+/* WHEN THE SCREEN BECOMES LARGER, 768px */
+/* WHEN THE SCREEN BECOMES LARGER, 768px */
+/* WHEN THE SCREEN BECOMES LARGER, 768px */
+/* WHEN THE SCREEN BECOMES LARGER, 768px */
+
+@media screen and (min-width:768px){
+    .logo {
+        display: flex;
+        flex: 1;
+        align-items: center;
+    }
+    .logo img {
+        height: 50px;
+        width: 50px;
+    
+    }
+    .logo h2 {
+        color: white;
+        font-weight: normal;
+        font-family: 'Architects Daughter', cursive;
+        
+    }
+    nav ul li{
+        display: inline;
+        color: white;
+        font-family: Helvetica, Arial, sans-serif;
+        margin: 0 10px;
+        font-weight: normal;
+    }
+    nav ul li button {
+        width: 100px;
+        height: 30px;
+        font-size: 1em;
+        background-color: #0B4F6C;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        padding-bottom: 4px;
+    }
+    .hambuger-menu {
+        display: none;
+    }
+    .page-menu {
+        display: none;
+    }
+    
+    /* JUMBOTRON */
+    .jumbotron {
+        height: 600px;
+        padding-top: 0px;
+        display: flex;
+    }
+    .jumbotron-text{
+        width: 50%;
+        /* border: 1px solid red; */
+        padding-top: 140px;
+    }
+    .jumbotron-images {
+        padding-top: 100px;
+        width: 50%;
+        height: 500px;
+        display: flex;
+    }
+    .jumbotron-img1{
+        height: 520px;
+        width: 100%;
+        background-image: url("../images/sampleApp1.png");
+        background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+        /* border: 1px solid yellow; */
+    }
+    /* .jumbotron-img2{
+        width: 50%;
+        height: 500px;
+        background-image: url("../images/sampleApp2.png");
+        background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+        border: 1px solid yellow;
+    } */
+    .slogan {
+        text-align: left;
+        font-size: 2em;
+        font-family: Verdana, Tahoma, sans-serif;
+        font-weight: normal;
+        padding: 1%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: black;
+        
+    }
+    .slogan-extended {
+        margin-top: 30px;
+        text-align: left;
+        font-size: 1em;
+        font-family: Verdana, Tahoma, sans-serif;
+        padding: 1%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: black;
+        line-height: 2;
+    }
+    /* .slogan {
+        font-size: 1.5em;
+    }
+    .slogan-extended {
+        margin-top: 100px;
+        font-size: 1em;
+    } */
+    #get-app {
+        margin-top: 30px;
+    }
+    /* HOW IT WORKS */
+    .how-it-works {
+        border-bottom: none;
+    }
+    .how-it-works h1 {
+        font-size: 1.8em;
+        margin-top: 20px;
+    }
+    .how-it-works p {
+        font-size: 1.3em;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    .how-it-works-description {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .how-it-works-images {
+        width: 60%;
+        /* border: 1px solid red; */
+    }
+    .descr-img-row {
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .descr-img-long {
+        flex: 1;
+        background-size: cover;
+        background-position: center center;
+        margin: 2px;
+        /* border: 1px solid green; */
+    }
+    .descr-img-short {
+        flex: 1;
+        background-size: cover;
+        background-position: center right;
+        margin: 2px;
+        /* border: 1px solid red; */
+    }
+    .img-1 {
+        background-image: url("../images/depositphotos_188669292-stock-video-beautiful-black-man-using-phone.jpg");
+    }
+    .img-2 {
+    
+        background-image: url("../images/african-man-using-mobile-phone_53876-30538.jpg");
+        background-image: url("../images/photo-of-woman-holding-iphone-2531358.jpg");
+    }
+    .img-3 {
+        background-image: url("../images/browse_styles.JPG");
+    }
+    .img-4 {
+        background-image: url("../images/african-man-using-mobile-phone_53876-30538.jpg");
+        background-position: center center;
+    }
+    .how-it-works ul {
+        /* border: 1px solid green; */
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+    .how-it-works ul li {
+        list-style: none;
+        margin-bottom: 30px;
+        line-height: 2;
+        /* display: flex; */
+        align-items: flex-start;
+        justify-content: flex-start;
+        /* font-size: 1.1em; */
+        justify-content: flex-sart;
+        align-items: center;
+        /* border: 1px solid yellow; */
+    }
+    .how-it-works ul li i {
+        color: #4F26A6;
+        /* border: 1px solid green; */
+    }
+    .how-it-works ul li div{
+        font-size: 1.1em;
+        margin-left: 5px;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    /* WHY BIMAKIT */
+    .why-bimakit {
+        border-top: 1px solid #00000030;
+        border-bottom: 1px solid #00000030;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .why-bimakit h1 {
+        font-size: 1.8em;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .why-bimakit p {
+        font-size: 1.3em;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+    }
+    
+    .why-image {
+        height: 250px;
+    }
+    .why-description {
+        width: 300px;
+    }
+    .why-description h3 {
+        padding-left: 20px;
+    }
+    .why-description p {
+        font-size: 1em;
+        text-align: left;
+        padding: 10px 20px;
+    }
+    
+    /* CONTACT US */
+    .contact-form-section {
+        /* border: 1px solid red; */
+        /* width: 50%; */
+        margin: 0;
+        /* background-color: blue; */
+    }
+    .reach-us h1 {
+        font-weight: normal;
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .reach-us p {
+        font-size: 1.2em;
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+    }
+    .reach-us ul {
+        text-align: center;
+    }
+    .reach-us ul li {
+        /* margin-top: 20px; */
+        line-height: 3;
+        display: inline;
+        margin-left: 30px;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    /* FOOTER */
+    footer {
+        margin-top: 50px;
+        padding-top: 20px;
+    }
+    .bottom-nav li {
+        list-style: none;
+        color: white;
+    }
+    .nav-item {
+        width: 12%;
+    }
+    .nav-item ul li{
+        text-transform: capitalize;
+    }
+   
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid yellow; */
+}
+.bottom-nav li {
+    list-style: none;
+    color: white;
+    /* border: 1px solid yellow; */
+}
+.nav-item {
+    width: 29%;
+    margin: 0 2%;
+}
+/* LINKS */
+
+
+#how-it-works {
+    bottom: 30px;
+    /* border: 1px solid yellow; */
+   
+}
+#why-bimakit {
+    bottom: -675px;
+    /* border: 1px solid green;  */
+}
+#contacts {
+    /* border: 1px solid red;  */
+    bottom: -1900px;
+}
+}
+
+/* WHEN THE SCREEN BECOMES LARGER, 1024px */
+
+@media screen and (min-width:1024px){
+    /* JUMBOTRON */
+    .jumbotron {
+        height: 600px;
+        padding-top: 0px;
+    }
+    .slogan {
+        font-size: 2em;
+    }
+    .slogan-extended {
+        margin-top: 50px;
+        font-size: 1em;
+    }
+    .jumbotron-images{
+        margin-left: 10px;
+    }
+    .jumbotron-img1{
+        height: 520px;
+        width: 60%;
+        background-image: url("../images/sampleApp1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: right;
+        background-position-y: top;
+        /* border: 1px solid yellow; */
+    }
+    .jumbotron-img2{
+        margin-left: 10px;
+        width: 40%;
+        height: 520px;
+        background-image: url("../images/sampleApp2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: left;
+        background-position-y: center;
+        /* border: 1px solid yellow; */
+    }
+    #get-app {
+        margin-top: 50px;
+    }
+    /* HOW IT WORKS */
+    
+    .how-it-works h1 {
+        font-size: 2em;
+        margin-top: 20px;
+    }
+    .how-it-works p {
+        font-size: 1.3em;
+    }
+    .how-it-works-description {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .how-it-works-images {
+        width: 60%;
+    }
+    .descr-img-row {
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .descr-img-long {
+        flex: 2;
+        background-size: cover;
+        background-position: center center;
+        margin: 2px;
+    }
+    .descr-img-short {
+        flex: 1;
+        background-size: cover;
+        background-position: center right;
+        margin: 2px;
+    }
+    .img-1 {
+        /* background-image: url("../images/woman-in-white-long-sleeved-shirt-holding-smartphone-sitting-920378.jpg"); */
+        background-image: url("../images/depositphotos_188669292-stock-video-beautiful-black-man-using-phone.jpg");
+    }
+    .img-2 {
+        background-image: url("../images/photo-of-woman-holding-iphone-2531358.jpg");
+        /* background-image: url("../images/african-man-using-mobile-phone_53876-30538.jpg"); */
+        /* background-image: url("../images/depositphotos_188669292-stock-video-beautiful-black-man-using-phone.jpg"); */
+        /* background-position: center center; */
+    }
+    .img-3 {
+        /* background-image: url("../images/bag-electronics-girl-hands-359757.jpg"); */
+        /* background-image: url("../images/hail_msusi.JPG"); */
+        background-image: url("../images/browse_styles.JPG");
+
+
+    }
+    .img-4 {
+        /* background-image: url("../images/hair-stylist-spraying-bride-s-hair-2751463.jpg"); */
+        background-image: url("../images/hairstyled.JPG");
+        background-image: url("../images/african-man-using-mobile-phone_53876-30538.jpg");
+        background-position: center center;
+    }
+    .how-it-works ul {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+    }
+    .how-it-works ul li {
+        list-style: none;
+        margin-bottom: 30px;
+        line-height: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .how-it-works-description ul li i {
+        font-size: 1.4em;
+    }
+    .bullets {
+        width: 90%;
+        margin-left: 20px;
+    }
+}
+
+
+/* TERMS AND CONDITIONS STYLING */
+.terms {
+    margin: 0 10%;
+}
+.terms h1 {
+    text-align: left;
+    font-size: 2em;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: normal;
+    /* padding: 1%; */
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    color: black;
+    margin-bottom: 15px;
+}
+.terms h2 {
+    text-align: left;
+    font-size: 1.5em;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: normal;
+    /* padding: 1%; */
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    color: black;
+    margin-bottom: 15px;
+}
+
+.terms p{
+    text-align: left;
+    font-size: 1em;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.term-links {
+    text-decoration: underline;
+    color: blue;
+    margin-left: 20px;
+    font-size: 1em;
+}
+.third-party-reasons {
+    margin-left: 20px;
+    font-size: 1em;
+}
